@@ -1,0 +1,220 @@
+/* Стили для страницы локаций */
+
+.world-map-section {
+    margin-bottom: 40px;
+}
+
+.world-map-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.world-map {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.map-region {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(212, 167, 106, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+
+.map-region:hover {
+    background-color: rgba(212, 167, 106, 0.8);
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.region-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.map-region:hover .region-tooltip {
+    opacity: 1;
+    visibility: visible;
+    bottom: 120%;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.location-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.location-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.location-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.location-card:hover .location-image img {
+    transform: scale(1.05);
+}
+
+.location-difficulty {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.location-difficulty.easy {
+    background-color: #4CAF50;
+}
+
+.location-difficulty.medium {
+    background-color: #FFC107;
+    color: #333;
+}
+
+.location-difficulty.hard {
+    background-color: #F44336;
+}
+
+.location-difficulty.very-hard {
+    background-color: #9C27B0;
+}
+
+.location-info {
+    padding: 15px;
+}
+
+.location-info h2 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.location-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.location-stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-name {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.stat-value {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.location-desc {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.location-info .btn {
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Статистика */
+.locations-stats {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+.locations-stats h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+}

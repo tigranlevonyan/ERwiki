@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Encyclopedia - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Game Encyclopedia</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="characters.html">Персонажи</a></li>
+                    <li><a href="items.html">Предметы</a></li>
+                    <li><a href="locations.html">Локации</a></li>
+                    <li><a href="forum.html">Сообщество</a></li>
+                </ul>
+            </nav>
+            <div class="search-auth">
+                <form action="search.html" method="GET">
+                    <input type="text" name="q" placeholder="Поиск...">
+                    <button type="submit">Найти</button>
+                </form>
+                <div class="auth-buttons">
+                    <button class="login-btn">Войти</button>
+                    <button class="register-btn">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="hero-banner">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Энциклопедия мира Межземья</h1>
+                    <p class="subtitle">Полное руководство по вселенной Elden Ring</p>
+                    <div class="hero-buttons">
+                        <a href="getting-started.html" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            </svg>
+                            Начать путешествие
+                        </a>
+                        <a href="lore.html" class="btn btn-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            </svg>
+                            Изучить лор
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="updates-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    </svg>
+                    Последние обновления
+                </h2>
+                <div class="updates-grid">
+                    <article class="update-card">
+                        <div class="update-image">
+                            <img src="images/updates/dlc-shadow.jpg" alt="DLC Shadow of the Erdtree">
+                            <span class="update-badge">DLC</span>
+                        </div>
+                        <div class="update-content">
+                            <h3>Shadow of the Erdtree</h3>
+                            <div class="update-meta">
+                                <span class="date">21 июня 2024</span>
+                                <span class="comments">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                    </svg>
+                                    248
+                                </span>
+                            </div>
+                            <p class="update-desc">Новое дополнение добавляет более 30 часов контента, включая новые локации, боссов и оружие.</p>
+                            <a href="dlc-shadow.html" class="btn btn-small">Подробнее</a>
+                        </div>
+                    </article>
+                    
+                    <article class="update-card">
+                        <div class="update-image">
+                            <img src="images/updates/patch-1.12.jpg" alt="Patch 1.12">
+                            <span class="update-badge">Патч</span>
+                        </div>
+                        <div class="update-content">
+                            <h3>Обновление 1.12</h3>
+                            <div class="update-meta">
+                                <span class="date">10 мая 2024</span>
+                                <span class="comments">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                    </svg>
+                                    187
+                                </span>
+                            </div>
+                            <p class="update-desc">Балансные изменения для PvP, исправления ошибок и подготовка к DLC.</p>
+                            <a href="patch-1.12.html" class="btn btn-small">Подробнее</a>
+                        </div>
+                    </article>
+                    
+                    <article class="update-card">
+                        <div class="update-image">
+                            <img src="images/updates/community-event.jpg" alt="Community Event">
+                            <span class="update-badge">Событие</span>
+                        </div>
+                        <div class="update-content">
+                            <h3>Фестиваль Повелителей</h3>
+                            <div class="update-meta">
+                                <span class="date">15 апреля 2024</span>
+                                <span class="comments">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                    </svg>
+                                    156
+                                </span>
+                            </div>
+                            <p class="update-desc">Специальное PvP-событие с уникальными наградами и новыми аренами.</p>
+                            <a href="festival.html" class="btn btn-small">Подробнее</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="main-sections">
+            <div class="container">
+                <h2 class="section-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    </svg>
+                    Исследуйте мир Elden Ring
+                </h2>
+                <div class="sections-grid">
+                    <a href="characters.html" class="section-card">
+                        <div class="section-image">
+                            <img src="images/sections/characters.jpg" alt="Персонажи">
+                            <div class="section-overlay"></div>
+                        </div>
+                        <div class="section-content">
+                            <h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                </svg>
+                                Персонажи
+                            </h3>
+                            <p>NPC, квестовые линии и истории всех персонажей</p>
+                            <span class="section-count">48 персонажей</span>
+                        </div>
+                    </a>
+                    <a href="bosses.html" class="section-card">
+                        <div class="section-image">
+                            <img src="images/sections/bosses.jpg" alt="Боссы">
+                            <div class="section-overlay"></div>
+                        </div>
+                        <div class="section-content">
+                            <h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                </svg>
+                                Боссы
+                            </h3>
+                            <p>Тактики боя, слабые места и награды</p>
+                            <span class="section-count">83 босса</span>
+                        </div>
+                    </a>
+                    
+                    <a href="weapons.html" class="section-card">
+                        <div class="section-image">
+                            <img src="images/sections/weapons.jpg" alt="Оружие">
+                            <div class="section-overlay"></div>
+                        </div>
+                        <div class="section-content">
+                            <h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                </svg>
+                                Оружие
+                            </h3>
+                            <p>Полный каталог оружия с характеристиками</p>
+                            <span class="section-count">308 видов</span>
+                        </div>
+                    </a>
+                    
+                    <a href="locations.html" class="section-card">
+                        <div class="section-image">
+                            <img src="images/sections/locations.jpg" alt="Локации">
+                            <div class="section-overlay"></div>
+                        </div>
+                        <div class="section-content">
+                            <h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                </svg>
+                                Локации
+                            </h3>
+                            <p>Карты, секреты и важные точки</p>
+                            <span class="section-count">14 регионов</span>
+                        </div>
+                    </a>
+                    <a href="magic.html" class="section-card">
+                        <div class="section-image">
+                            <img src="images/sections/magic.jpg" alt="Магия">
+                            <div class="section-overlay"></div>
+                        </div>
+                        <div class="section-content">
+                            <h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                </svg>
+                                Магия
+                            </h3>
+                            <p>Заклинания, молитвы и колдовство</p>
+                            <span class="section-count">170 видов</span>
+                        </div>
+                    </a>
+                    <a href="lore.html" class="section-card">
+                        <div class="section-image">
+                            <img src="images/sections/lore.jpg" alt="Лор">
+                            <div class="section-overlay"></div>
+                        </div>
+                        <div class="section-content">
+                            <h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                </svg>
+                                Лор
+                            </h3>
+                            <p>История мира, боги и тайны</p>
+                            <span class="section-count">42 статьи</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="popular-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    </svg>
+                    Популярные материалы
+                </h2>
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="guides">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        </svg>
+                        Гайды
+                    </button>
+                    <button class="tab-btn" data-tab="builds">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        </svg>
+                        Билды
+                    </button>
+                    <button class="tab-btn" data-tab="secrets">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        </svg>
+                        Секреты
+                    </button>
+                </div>
+                
+                <div class="tab-content active" id="guides">
+                    <div class="popular-grid">
+                        <article class="popular-card">
+                            <div class="popular-image">
+                                <img src="images/popular/beginner-guide.jpg" alt="Гайд для новичков">
+                                <span class="popular-badge">Новичкам</span>
+                            </div>
+                            <div class="popular-info">
+                                <h3>Гайд для новичков</h3>
+                                <div class="popular-meta">
+                                    <span class="date">Обновлено: 12.05.2024</span>
+                                    <span class="views">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                        </svg>
+                                        245K
+                                    </span>
+                                </div>
+                                <p class="popular-desc">Основы выживания в Межземье: от выбора класса до первых боссов</p>
+                                <a href="beginner-guide.html" class="btn btn-small">Читать</a>
+                            </div>
+                        </article>
+                        
+                        <article class="popular-card">
+                            <div class="popular-image">
+                                <img src="images/popular/rune-farming.jpg" alt="Фарм рун">
+                                <span class="popular-badge">Гайд</span>
+                            </div>
+                            <div class="popular-info">
+                                <h3>Лучшие способы фарма рун</h3>
+                                <div class="popular-meta">
+                                    <span class="date">Обновлено: 03.05.2024</span>
+                                    <span class="views">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                        </svg>
+                                        189K
+                                    </span>
+                                </div>
+                                <p class="popular-desc">10 лучших мест для быстрого прокачивания персонажа</p>
+                                <a href="rune-farming.html" class="btn btn-small">Читать</a>
+                            </div>
+                        </article>
+                        <article class="popular-card">
+                            <div class="popular-image">
+                                <img src="images/popular/quests.jpg" alt="Квесты">
+                                <span class="popular-badge">Прохождение</span>
+                            </div>
+                            <div class="popular-info">
+                                <h3>Полное прохождение всех квестов</h3>
+                                <div class="popular-meta">
+                                    <span class="date">Обновлено: 28.04.2024</span>
+                                    <span class="views">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                        </svg>
+                                        156K
+                                    </span>
+                                </div>
+                                <p class="popular-desc">Пошаговое руководство по всем NPC-квестам с условиями завершения</p>
+                                <a href="quests-guide.html" class="btn btn-small">Читать</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <div class="section-footer">
+                    <a href="guides.html" class="btn btn-outline">Все материалы</a>
+                </div>
+            </div>
+        </section>
+        <section class="forum-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    </svg>
+                    Активные обсуждения
+                </h2>
+                <div class="forum-grid">
+                    <article class="forum-card">
+                        <div class="forum-header">
+                            <span class="forum-tag lore">Лор</span>
+                            <h3>Кто такой Мечник Малекит на самом деле?</h3>
+                        </div>
+                        <p class="forum-desc">Обсуждение теорий о происхождении и мотивах этого загадочного персонажа...</p>
+                        <div class="forum-meta">
+                            <span class="author">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                </svg>
+                                TarnishedScholar
+                            </span>
+                            <span class="comments">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                </svg>
+                                24
+                            </span>
+                            <span class="time">2 часа назад</span>
+                        </div>
+                    </article>
+                    <article class="forum-card">
+                        <div class="forum-header">
+                            <span class="forum-tag builds">Билды</span>
+                            <h3>Лучший билд для DLC - ваши предположения</h3>
+                        </div>
+                        <p class="forum-desc">Какие статы и оружие будут наиболее эффективны против новых боссов...</p>
+                        <div class="forum-meta">
+                            <span class="author">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                </svg>
+                                EldenLord
+                            </span>
+                            <span class="comments">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                </svg>
+                                57
+                            </span>
+                            <span class="time">5 часов назад</span>
+                        </div>
+                    </article>
+                    <article class="forum-card">
+                        <div class="forum-header">
+                            <span class="forum-tag help">Помощь</span>
+                            <h3>Как победить Маликета, Черное Лезвие?</h3>
+                        </div>
+                        <p class="forum-desc">Делимся тактиками и советами для этого сложного босса...</p>
+                        <div class="forum-meta">
+                            <span class="author">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                </svg>
+                                StrugglingTarnished
+                            </span>
+                            <span class="comments">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                </svg>
+                                32
+                            </span>
+                            <span class="time">1 день назад</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="section-footer">
+                    <a href="forum.html" class="btn btn-outline">Перейти на форум</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elden Ring Encyclopedia</h3>
+                    <p>Неофициальный справочник по миру Elden Ring. Все права на игру принадлежат FromSoftware и Bandai Namco.</p>
+                    <div class="footer-logo">
+                        <img src="images/elden-ring-logo-small.png" alt="Elden Ring">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="characters.html">Персонажи</a></li>
+                        <li><a href="bosses.html">Боссы</a></li>
+                        <li><a href="weapons.html">Оружие</a></li>
+                        <li><a href="magic.html">Магия</a></li>
+                        <li><a href="locations.html">Локации</a></li>
+                        <li><a href="lore.html">Лор</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Сообщество</h3>
+                    <ul>
+                        <li><a href="forum.html">Форум</a></li>
+                        <li><a href="guides.html">Гайды</a></li>
+                        <li><a href="contribute.html">Участвовать</a></li>
+                        <li><a href="discord.html">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Подписаться</h3>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit">OK</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><img src="images/social/vk.png" alt="VK"></a>
+                        <a href="#"><img src="images/social/tg.png" alt="Telegram"></a>
+                        <a href="#"><img src="images/social/yt.png" alt="YouTube"></a>
+                        <a href="#"><img src="images/social/twitter.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 Elden Ring Encyclopedia. Все права защищены.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="contact.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

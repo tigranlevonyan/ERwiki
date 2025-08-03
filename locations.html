@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Encyclopedia - Локации</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/locations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Game Encyclopedia</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="characters.html">Персонажи</a></li>
+                    <li><a href="items.html">Предметы</a></li>
+                    <li><a href="locations.html" class="active">Локации</a></li>
+                    <li><a href="forum.html">Форум</a></li>
+                </ul>
+            </nav>
+            <div class="search-auth">
+                <form action="search.html" method="GET">
+                    <input type="text" name="q" placeholder="Поиск...">
+                    <button type="submit">Найти</button>
+                </form>
+                <div class="auth-buttons">
+                    <button class="login-btn">Войти</button>
+                    <button class="register-btn">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="main-content">
+        <div class="container">
+            <h1>Локации Elden Ring</h1>
+            <p class="page-description">Полные карты всех регионов, подземелий и важных мест с указанием предметов, врагов и секретов.</p>
+            
+            <!-- Фильтры -->
+            <div class="filters">
+                <form>
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label for="region">Регион</label>
+                            <select id="region" name="region">
+                                <option value="all">Все</option>
+                                <option value="limgrave">Лимгрейв</option>
+                                <option value="liurnia">Лиурния Озёр</option>
+                                <option value="caelid">Калеид</option>
+                                <option value="altus">Плато Альтус</option>
+                                <option value="mountaintops">Вершины Гигантов</option>
+                                <option value="underground">Подземелья</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="location-type">Тип локации</label>
+                            <select id="location-type" name="type">
+                                <option value="all">Все</option>
+                                <option value="open-world">Открытый мир</option>
+                                <option value="dungeon">Подземелье</option>
+                                <option value="legacy">Наследие</option>
+                                <option value="town">Город</option>
+                                <option value="catacomb">Катакомбы</option>
+                                <option value="cave">Пещера</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="difficulty">Сложность</label>
+                            <select id="difficulty" name="difficulty">
+                                <option value="all">Все</option>
+                                <option value="easy">Легкая</option>
+                                <option value="medium">Средняя</option>
+                                <option value="hard">Тяжелая</option>
+                                <option value="very-hard">Очень тяжелая</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-row">
+                        <div class="filter-group search-group">
+                            <label for="location-search">Поиск</label>
+                            <input type="text" id="location-search" name="search" placeholder="Название локации...">
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="location-sort">Сортировка</label>
+                            <select id="location-sort" name="sort">
+                                <option value="name-asc">По имени (А-Я)</option>
+                                <option value="name-desc">По имени (Я-А)</option>
+                                <option value="region">По региону</option>
+                                <option value="difficulty">По сложности</option>
+                                <option value="recommended">По рекомендуемому уровню</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn">Применить</button>
+                        <button type="reset" class="btn btn-outline">Сбросить</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Сетка локаций -->
+            <div class="locations-grid">
+                <!-- Локация 1 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="images/locations/stormveil-castle.jpg" alt="Замок Штормвейл">
+                        <span class="location-difficulty hard">Тяжелая</span>
+                    </div>
+                    <div class="location-info">
+                        <h2>Замок Штормвейл</h2>
+                        <div class="location-meta">
+                            <span class="location-region">Лимгрейв</span>
+                            <span class="location-type">Наследие</span>
+                        </div>
+                        <div class="location-stats">
+                            <div class="stat">
+                                <span class="stat-name">Рек. уровень</span>
+                                <span class="stat-value">30-40</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Боссы</span>
+                                <span class="stat-value">3</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Квесты</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                        </div>
+                        <p class="location-desc">Огромный замок, охраняемый Годриком Изгоем. Первое крупное подземелье на пути Погасшего.</p>
+                        <a href="location-stormveil.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                
+                <!-- Локация 2 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="images/locations/raya-lucaria.jpg" alt="Академия Райя Лукария">
+                        <span class="location-difficulty medium">Средняя</span>
+                    </div>
+                    <div class="location-info">
+                        <h2>Академия Райя Лукария</h2>
+                        <div class="location-meta">
+                            <span class="location-region">Лиурния Озёр</span>
+                            <span class="location-type">Наследие</span>
+                        </div>
+                        <div class="location-stats">
+                            <div class="stat">
+                                <span class="stat-name">Рек. уровень</span>
+                                <span class="stat-value">50-60</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Боссы</span>
+                                <span class="stat-value">2</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Квесты</span>
+                                <span class="stat-value">4</span>
+                            </div>
+                        </div>
+                        <p class="location-desc">Величественная академия чародеев, где правит Королева Реннала.</p>
+                        <a href="location-raya-lucaria.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                
+                <!-- Локация 3 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="images/locations/volcano-manor.jpg" alt="Особняк Вулкано">
+                        <span class="location-difficulty very-hard">Очень тяжелая</span>
+                    </div>
+                    <div class="location-info">
+                        <h2>Особняк Вулкано</h2>
+                        <div class="location-meta">
+                            <span class="location-region">Плато Альтус</span>
+                            <span class="location-type">Наследие</span>
+                        </div>
+                        <div class="location-stats">
+                            <div class="stat">
+                                <span class="stat-name">Рек. уровень</span>
+                                <span class="stat-value">70-80</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Боссы</span>
+                                <span class="stat-value">3</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Квесты</span>
+                                <span class="stat-value">6</span>
+                            </div>
+                        </div>
+                        <p class="location-desc">Логово Пожирателей Богов, где обитает Предатель Рыккард.</p>
+                        <a href="location-volcano-manor.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                
+                <!-- Локация 4 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="images/locations/capital.jpg" alt="Столица Лейндел">
+                        <span class="location-difficulty very-hard">Очень тяжелая</span>
+                    </div>
+                    <div class="location-info">
+                        <h2>Столица Лейндел</h2>
+                        <div class="location-meta">
+                            <span class="location-region">Плато Альтус</span>
+                            <span class="location-type">Наследие</span>
+                        </div>
+                        <div class="location-stats">
+                            <div class="stat">
+                                <span class="stat-name">Рек. уровень</span>
+                                <span class="stat-value">80-90</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Боссы</span>
+                                <span class="stat-value">4</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Квесты</span>
+                                <span class="stat-value">8</span>
+                            </div>
+                        </div>
+                        <p class="location-desc">Величественная столица, когда-то бывшая центром Золотого Порядка, ныне разрушенная.</p>
+                        <a href="location-capital.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                
+                <!-- Локация 5 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="images/locations/haligtree.jpg" alt="Святое Древо Малении">
+                        <span class="location-difficulty very-hard">Очень тяжелая</span>
+                    </div>
+                    <div class="location-info">
+                        <h2>Святое Древо Малении</h2>
+                        <div class="location-meta">
+                            <span class="location-region">Секретная зона</span>
+                            <span class="location-type">Наследие</span>
+                        </div>
+                        <div class="location-stats">
+                            <div class="stat">
+                                <span class="stat-name">Рек. уровень</span>
+                                <span class="stat-value">100+</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Боссы</span>
+                                <span class="stat-value">2</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Квесты</span>
+                                <span class="stat-value">3</span>
+                            </div>
+                        </div>
+                        <p class="location-desc">Секретная зона, где обитает Маления, Клинок Микеллы - один из самых сложных боссов игры.</p>
+                        <a href="location-haligtree.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                
+                <!-- Локация 6 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="images/locations/nokron.jpg" alt="Нокрон, Вечный город">
+                        <span class="location-difficulty hard">Тяжелая</span>
+                    </div>
+                    <div class="location-info">
+                        <h2>Нокрон, Вечный город</h2>
+                        <div class="location-meta">
+                            <span class="location-region">Подземелья</span>
+                            <span class="location-type">Наследие</span>
+                        </div>
+                        <div class="location-stats">
+                            <div class="stat">
+                                <span class="stat-name">Рек. уровень</span>
+                                <span class="stat-value">60-70</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Боссы</span>
+                                <span class="stat-value">2</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Квесты</span>
+                                <span class="stat-value">4</span>
+                            </div>
+                        </div>
+                        <p class="location-desc">Древний подземный город, построенный богоподобными существами до эпохи Древа Эрд.</p>
+                        <a href="location-nokron.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Пагинация -->
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">&raquo;</a>
+            </div>
+            
+            <!-- Статистика -->
+            <div class="locations-stats">
+                <h2>Статистика локаций</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Всего локаций</h3>
+                        <div class="stat-value">142</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Основные регионы</h3>
+                        <div class="stat-value">14</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Подземелья</h3>
+                        <div class="stat-value">78</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Наследия</h3>
+                        <div class="stat-value">12</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elden Ring Encyclopedia</h3>
+                    <p>Неофициальный справочник по миру Elden Ring. Все права на игру принадлежат FromSoftware и Bandai Namco.</p>
+                    <div class="footer-logo">
+                        <img src="images/elden-ring-logo-small.png" alt="Elden Ring">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="characters.html">Персонажи</a></li>
+                        <li><a href="bosses.html">Боссы</a></li>
+                        <li><a href="weapons.html">Оружие</a></li>
+                        <li><a href="magic.html">Магия</a></li>
+                        <li><a href="locations.html">Локации</a></li>
+                        <li><a href="lore.html">Лор</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Сообщество</h3>
+                    <ul>
+                        <li><a href="forum.html">Форум</a></li>
+                        <li><a href="guides.html">Гайды</a></li>
+                        <li><a href="contribute.html">Участвовать</a></li>
+                        <li><a href="discord.html">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Подписаться</h3>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit">OK</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><img src="images/social/vk.png" alt="VK"></a>
+                        <a href="#"><img src="images/social/tg.png" alt="Telegram"></a>
+                        <a href="#"><img src="images/social/yt.png" alt="YouTube"></a>
+                        <a href="#"><img src="images/social/twitter.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 Elden Ring Encyclopedia. Все права защищены.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="contact.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/locations.js"></script>
+</body>
+</html>

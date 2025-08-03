@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring - Сообщество и обсуждения</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/forum.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Game Encyclopedia</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="characters.html">Персонажи</a></li>
+                    <li><a href="items.html">Предметы</a></li>
+                    <li><a href="locations.html">Локации</a></li>
+                    <li><a href="forum.html" class="active">Сообщество</a></li>
+                </ul>
+            </nav>
+            <div class="search-auth">
+                <form action="search.html" method="GET">
+                    <input type="text" name="q" placeholder="Поиск...">
+                    <button type="submit">Найти</button>
+                </form>
+                <div class="auth-buttons">
+                    <button class="login-btn">Войти</button>
+                    <button class="register-btn">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <div class="forum-header">
+                <h1>Сообщество Elden Ring</h1>
+                <p class="forum-description">Обсуждайте игру, делитесь опытом и находите единомышленников</p>
+                
+                <div class="forum-actions">
+                    <a href="new-topic.html" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        </svg>
+                        Новая тема
+                    </a>
+                    <div class="forum-tabs">
+                        <button class="tab-btn active" data-tab="recent">Последние</button>
+                        <button class="tab-btn" data-tab="popular">Популярные</button>
+                        <button class="tab-btn" data-tab="unanswered">Без ответов</button>
+                    </div>
+                </div>
+            </div>
+            <div class="forum-sections">
+                <section class="forum-section">
+                    <div class="section-header">
+                        <h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                            </svg>
+                            Обсуждения игры
+                        </h2>
+                        <p>Общие темы по игре, новости и события</p>
+                    </div>
+
+                    <div class="topics-list">
+                        <article class="topic-card">
+                            <div class="topic-status">
+                                <span class="status-indicator hot"></span>
+                                <div class="reply-count">
+                                    <span>148</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="topic-content">
+                                <h3><a href="topic.html">Обсуждение DLC Shadow of the Erdtree</a></h3>
+                                <div class="topic-meta">
+                                    <span class="author">Автор: <a href="profile.html">TarnishedScholar</a></span>
+                                    <span class="date">Сегодня, 14:30</span>
+                                    <span class="views">5,678 просмотров</span>
+                                </div>
+                                <p class="topic-excerpt">Обсуждаем новое DLC - локации, боссов, оружие и лор. Какие у вас впечатления после первых часов игры?</p>
+                            </div>
+                            <div class="topic-last-post">
+                                <div class="last-post-author">
+                                    <img src="images/avatars/avatar1.jpg" alt="Аватар" class="avatar">
+                                    <a href="profile.html">LastPoster</a>
+                                </div>
+                                <span class="last-post-time">15 минут назад</span>
+                            </div>
+                        </article>
+
+                        <!-- Тема 2 -->
+                        <article class="topic-card">
+                            <div class="topic-status">
+                                <span class="status-indicator popular"></span>
+                                <div class="reply-count">
+                                    <span>87</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="topic-content">
+                                <h3><a href="topic.html">Кто такой Мечник Малекит на самом деле?</a></h3>
+                                <div class="topic-meta">
+                                    <span class="author">Автор: <a href="profile.html">LoreMaster</a></span>
+                                    <span class="date">Вчера, 22:15</span>
+                                    <span class="views">4,321 просмотров</span>
+                                </div>
+                                <p class="topic-excerpt">Разбираем все теории о происхождении и мотивах этого загадочного персонажа. Есть ли связь с Марикой?</p>
+                            </div>
+                            <div class="topic-last-post">
+                                <div class="last-post-author">
+                                    <img src="images/avatars/avatar2.jpg" alt="Аватар" class="avatar">
+                                    <a href="profile.html">TheoryCrafter</a>
+                                </div>
+                                <span class="last-post-time">1 час назад</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="forum-section">
+                    <div class="section-header">
+                        <h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                            </svg>
+                            Геймплей и советы
+                        </h2>
+                        <p>Тактики прохождения, билды персонажей и игровые механики</p>
+                    </div>
+
+                    <div class="topics-list">
+                        <article class="topic-card">
+                            <div class="topic-status">
+                                <span class="status-indicator new"></span>
+                                <div class="reply-count">
+                                    <span>56</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="topic-content">
+                                <h3><a href="topic.html">Как победить Маликета, Черное Лезвие?</a></h3>
+                                <div class="topic-meta">
+                                    <span class="author">Автор: <a href="profile.html">StrugglingTarnished</a></span>
+                                    <span class="date">Сегодня, 10:45</span>
+                                    <span class="views">1,234 просмотров</span>
+                                </div>
+                                <p class="topic-excerpt">Делимся тактиками против этого сложного босса. Какое оружие и заклинания наиболее эффективны?</p>
+                            </div>
+                            <div class="topic-last-post">
+                                <div class="last-post-author">
+                                    <img src="images/avatars/avatar3.jpg" alt="Аватар" class="avatar">
+                                    <a href="profile.html">BossSlayer</a>
+                                </div>
+                                <span class="last-post-time">30 минут назад</span>
+                            </div>
+                        </article>
+
+                        <!-- Тема 4 -->
+                        <article class="topic-card">
+                            <div class="topic-status">
+                                <div class="reply-count">
+                                    <span>98</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="topic-content">
+                                <h3><a href="topic.html">Лучший билд для DLC - ваши предположения</a></h3>
+                                <div class="topic-meta">
+                                    <span class="author">Автор: <a href="profile.html">BuildCrafter</a></span>
+                                    <span class="date">Сегодня, 12:20</span>
+                                    <span class="views">2,567 просмотров</span>
+                                </div>
+                                <p class="topic-excerpt">Какие статы, оружие и заклинания будут наиболее эффективны против новых боссов DLC?</p>
+                            </div>
+                            <div class="topic-last-post">
+                                <div class="last-post-author">
+                                    <img src="images/avatars/avatar4.jpg" alt="Аватар" class="avatar">
+                                    <a href="profile.html">MetaGamer</a>
+                                </div>
+                                <span class="last-post-time">45 минут назад</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Раздел 3 -->
+                <section class="forum-section">
+                    <div class="section-header">
+                        <h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                            </svg>
+                            Сообщество и события
+                        </h2>
+                        <p>Совместная игра, PvP и мероприятия сообщества</p>
+                    </div>
+
+                    <div class="topics-list">
+                        <!-- Тема 5 -->
+                        <article class="topic-card">
+                            <div class="topic-status">
+                                <div class="reply-count">
+                                    <span>42</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="topic-content">
+                                <h3><a href="topic.html">Фестиваль Повелителей - июнь 2024</a></h3>
+                                <div class="topic-meta">
+                                    <span class="author">Автор: <a href="profile.html">EventManager</a></span>
+                                    <span class="date">2 дня назад</span>
+                                    <span class="views">1,876 просмотров</span>
+                                </div>
+                                <p class="topic-excerpt">Регистрация на PvP-турнир с уникальными наградами. Правила и расписание внутри.</p>
+                            </div>
+                            <div class="topic-last-post">
+                                <div class="last-post-author">
+                                    <img src="images/avatars/avatar5.jpg" alt="Аватар" class="avatar">
+                                    <a href="profile.html">TournamentMaster</a>
+                                </div>
+                                <span class="last-post-time">3 часа назад</span>
+                            </div>
+                        </article>
+
+                        <!-- Тема 6 -->
+                        <article class="topic-card">
+                            <div class="topic-status">
+                                <span class="status-indicator solved"></span>
+                                <div class="reply-count">
+                                    <span>76</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="topic-content">
+                                <h3><a href="topic.html">Ищем группу для прохождения DLC</a></h3>
+                                <div class="topic-meta">
+                                    <span class="author">Автор: <a href="profile.html">CoopLover</a></span>
+                                    <span class="date">Сегодня, 09:15</span>
+                                    <span class="views">1,234 просмотров</span>
+                                </div>
+                                <p class="topic-excerpt">Формируем группу из 4 человек для совместного исследования нового DLC. Уровень 120-150.</p>
+                            </div>
+                            <div class="topic-last-post">
+                                <div class="last-post-author">
+                                    <img src="images/avatars/avatar6.jpg" alt="Аватар" class="avatar">
+                                    <a href="profile.html">SunBro</a>
+                                </div>
+                                <span class="last-post-time">1 час назад</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+            <aside class="forum-sidebar">
+                <div class="sidebar-widget">
+                    <h3>Статистика сообщества</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">24,567</span>
+                            <span class="stat-label">Пользователей</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">9,876</span>
+                            <span class="stat-label">Тем</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">87,654</span>
+                            <span class="stat-label">Сообщений</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Сейчас онлайн</h3>
+                    <div class="online-users">
+                        <div class="user">
+                            <img src="images/avatars/avatar7.jpg" alt="Аватар" class="avatar">
+                            <span class="username">TarnishedOne</span>
+                            <span class="user-status online"></span>
+                        </div>
+                        <div class="user">
+                            <img src="images/avatars/avatar8.jpg" alt="Аватар" class="avatar">
+                            <span class="username">EldenLord</span>
+                            <span class="user-status online"></span>
+                        </div>
+                        <div class="user">
+                            <img src="images/avatars/avatar9.jpg" alt="Аватар" class="avatar">
+                            <span class="username">MaleniaFan</span>
+                            <span class="user-status online"></span>
+                        </div>
+                        <div class="user">
+                            <img src="images/avatars/avatar10.jpg" alt="Аватар" class="avatar">
+                            <span class="username">RanniSimp</span>
+                            <span class="user-status idle"></span>
+                        </div>
+                        <div class="user">
+                            <img src="images/avatars/avatar11.jpg" alt="Аватар" class="avatar">
+                            <span class="username">RadahnEnjoyer</span>
+                            <span class="user-status online"></span>
+                        </div>
+                    </div>
+                    <a href="#" class="view-all">Показать всех (143)</a>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Ближайшие события</h3>
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">21</span>
+                            <span class="month">Июн</span>
+                        </div>
+                        <div class="event-info">
+                            <h4><a href="#">Фестиваль Повелителей</a></h4>
+                            <span class="event-time">20:00 МСК</span>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">28</span>
+                            <span class="month">Июн</span>
+                        </div>
+                        <div class="event-info">
+                            <h4><a href="#">Турнир "Клинок Микеллы"</a></h4>
+                            <span class="event-time">19:00 МСК</span>
+                        </div>
+                    </div>
+                    <a href="#" class="view-all">Все события</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elden Ring Encyclopedia</h3>
+                    <p>Неофициальный справочник по миру Elden Ring. Все права на игру принадлежат FromSoftware и Bandai Namco.</p>
+                    <div class="footer-logo">
+                        <img src="images/elden-ring-logo-small.png" alt="Elden Ring">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="characters.html">Персонажи</a></li>
+                        <li><a href="bosses.html">Боссы</a></li>
+                        <li><a href="weapons.html">Оружие</a></li>
+                        <li><a href="magic.html">Магия</a></li>
+                        <li><a href="locations.html">Локации</a></li>
+                        <li><a href="lore.html">Лор</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Сообщество</h3>
+                    <ul>
+                        <li><a href="forum.html">Форум</a></li>
+                        <li><a href="guides.html">Гайды</a></li>
+                        <li><a href="contribute.html">Участвовать</a></li>
+                        <li><a href="discord.html">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Подписаться</h3>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit">OK</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><img src="images/social/vk.png" alt="VK"></a>
+                        <a href="#"><img src="images/social/tg.png" alt="Telegram"></a>
+                        <a href="#"><img src="images/social/yt.png" alt="YouTube"></a>
+                        <a href="#"><img src="images/social/twitter.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 Elden Ring Encyclopedia. Все права защищены.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="contact.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/forum.js"></script>
+</body>
+</html>

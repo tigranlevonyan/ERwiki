@@ -1,0 +1,303 @@
+.characters-controls {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+#characters-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.filter-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.filter-group select,
+.filter-group input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: white;
+}
+
+.search-group {
+    flex-grow: 1;
+}
+
+.apply-filters,
+.reset-filters {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.apply-filters {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.reset-filters {
+    background-color: #f0f0f0;
+    color: var(--text-color);
+}
+
+.sorting {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sorting span {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+#sort-characters {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: white;
+}
+
+/* Сетка персонажей */
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.character-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.character-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.character-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.character-card:hover .character-image img {
+    transform: scale(1.05);
+}
+
+.faction-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.faction-badge.alliance {
+    background-color: #0078ff;
+}
+
+.faction-badge.horde {
+    background-color: #e10a0a;
+}
+
+.faction-badge.neutral {
+    background-color: #6b6b6b;
+}
+
+.character-info {
+    padding: 15px;
+}
+
+.character-info h2 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.character-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.class {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+}
+
+.class.warrior {
+    background-color: #c79c6e;
+}
+
+.class.mage {
+    background-color: #69ccf0;
+}
+
+.class.rogue {
+    background-color: #fff569;
+    color: #333;
+}
+
+.class.healer {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.class.archer {
+    background-color: #abd473;
+}
+
+.version {
+    color: #777;
+}
+
+.character-desc {
+    margin: 10px 0 15px;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.character-stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-name {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.stat-value {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.character-info .btn {
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Статистика */
+.characters-stats {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+.characters-stats h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .characters-controls {
+        flex-direction: column;
+    }
+    
+    .filters {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    #characters-filter {
+        flex-direction: column;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+    
+    .apply-filters,
+    .reset-filters {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .sorting {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .characters-grid {
+        grid-template-columns: 1fr;
+    }
+}

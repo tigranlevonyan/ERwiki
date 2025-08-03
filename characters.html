@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Encyclopedia - Персонажи</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/characters.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Game Encyclopedia</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="characters.html" class="active">Персонажи</a></li>
+                    <li><a href="items.html">Предметы</a></li>
+                    <li><a href="locations.html">Локации</a></li>
+                    <li><a href="forum.html">Форум</a></li>
+                </ul>
+            </nav>
+            <div class="search-auth">
+                <form action="search.html" method="GET">
+                    <input type="text" name="q" placeholder="Поиск...">
+                    <button type="submit">Найти</button>
+                </form>
+                <div class="auth-buttons">
+                    <button class="login-btn">Войти</button>
+                    <button class="register-btn">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>Персонажи Elden Ring</h1>
+            <p class="page-description">Полный список NPC, их квестовые линии, диалоги и расположение в мире игры.</p>
+            <div class="characters-controls">
+                <div class="filters">
+                    <form id="characters-filter">
+                        <div class="filter-group">
+                            <label for="faction">Фракция</label>
+                            <select id="faction" name="faction">
+                                <option value="all">Все</option>
+                                <option value="golden-order">Золотой Порядок</option>
+                                <option value="carians">Карианские королевства</option>
+                                <option value="volcano-manor">Особняк Вулкано</option>
+                                <option value="fingers">Двупалые</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="status">Статус</label>
+                            <select id="status" name="status">
+                                <option value="all">Все</option>
+                                <option value="alive">Живые</option>
+                                <option value="dead">Мёртвые</option>
+                                <option value="unknown">Неизвестно</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group search-group">
+                            <label for="search">Поиск по имени</label>
+                            <input type="text" id="search" name="search" placeholder="Введите имя...">
+                        </div>
+                        
+                        <button type="submit" class="apply-filters">Применить</button>
+                        <button type="reset" class="reset-filters">Сбросить</button>
+                    </form>
+                </div>
+                
+                <div class="sorting">
+                    <span>Сортировка:</span>
+                    <select id="sort-characters">
+                        <option value="name-asc">По имени (А-Я)</option>
+                        <option value="name-desc">По имени (Я-А)</option>
+                        <option value="location">По локации</option>
+                        <option value="importance">По важности</option>
+                    </select>
+                </div>
+            </div>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/characters/malenia.jpg" alt="Маления, Клинок Микеллы">
+                        <span class="faction-badge">Карианские королевства</span>
+                    </div>
+                    <div class="character-info">
+                        <h2>Маления, Клинок Микеллы</h2>
+                        <div class="character-meta">
+                            <span class="class">Босс</span>
+                            <span class="version">v1.0+</span>
+                        </div>
+                        <p class="character-desc">Легендарная воительница, никогда не знавшая поражений. Сестра-близнец Микеллы и одна из детей Марики.</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-name">Локация</span>
+                                <span class="stat-value">Элиэйл</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Квест</span>
+                                <span class="stat-value">Основной</span>
+                            </div>
+                        </div>
+                        <a href="character-malenia.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/characters/radahn.jpg" alt="Радан, Пожиратель Звёзд">
+                        <span class="faction-badge">Золотой Порядок</span>
+                    </div>
+                    <div class="character-info">
+                        <h2>Радан, Пожиратель Звёзд</h2>
+                        <div class="character-meta">
+                            <span class="class">Босс</span>
+                            <span class="version">v1.0+</span>
+                        </div>
+                        <p class="character-desc">Один из детей Марики, легендарный воин, остановивший движение звёзд. Ныне обезумевший и поедающий трупы.</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-name">Локация</span>
+                                <span class="stat-value">Пустошь Калеида</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Квест</span>
+                                <span class="stat-value">Основной</span>
+                            </div>
+                        </div>
+                        <a href="character-radahn.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/characters/ranni.jpg" alt="Ренни, Ведьма">
+                        <span class="faction-badge">Карианские королевства</span>
+                    </div>
+                    <div class="character-info">
+                        <h2>Ренни, Ведьма</h2>
+                        <div class="character-meta">
+                            <span class="class">NPC</span>
+                            <span class="version">v1.0+</span>
+                        </div>
+                        <p class="character-desc">Таинственная ведьма, предлагающая стать вашей наставницей. Играет ключевую роль в одном из концовок игры.</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-name">Локация</span>
+                                <span class="stat-value">Башня Ренни</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Квест</span>
+                                <span class="stat-value">Побочный</span>
+                            </div>
+                        </div>
+                        <a href="character-ranni.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/characters/varre.jpg" alt="Варре, Бледный">
+                        <span class="faction-badge">Двупалые</span>
+                    </div>
+                    <div class="character-info">
+                        <h2>Варре, Бледный</h2>
+                        <div class="character-meta">
+                            <span class="class">NPC</span>
+                            <span class="version">v1.0+</span>
+                        </div>
+                        <p class="character-desc">Персонаж, встречающийся у Первой Церкви Элизы. Предлагает присоединиться к культу Кровавого Пальца.</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-name">Локация</span>
+                                <span class="stat-value">Первая Церковь</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Квест</span>
+                                <span class="stat-value">Побочный</span>
+                            </div>
+                        </div>
+                        <a href="character-varre.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/characters/patches.jpg" alt="Лоскутик">
+                        <span class="faction-badge">Нейтральный</span>
+                    </div>
+                    <div class="character-info">
+                        <h2>Лоскутик</h2>
+                        <div class="character-meta">
+                            <span class="class">NPC</span>
+                            <span class="version">v1.0+</span>
+                        </div>
+                        <p class="character-desc">Знакомый по предыдущим играм FromSoftware, хитрый торговец, любящий подшутить над игроком.</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-name">Локация</span>
+                                <span class="stat-value">Пещера Мургра</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Квест</span>
+                                <span class="stat-value">Побочный</span>
+                            </div>
+                        </div>
+                        <a href="character-patches.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/characters/millicent.jpg" alt="Милисента">
+                        <span class="faction-badge">Нейтральный</span>
+                    </div>
+                    <div class="character-info">
+                        <h2>Милисента</h2>
+                        <div class="character-meta">
+                            <span class="class">NPC</span>
+                            <span class="version">v1.0+</span>
+                        </div>
+                        <p class="character-desc">Таинственная девушка, без одной руки, страдающая от алой гнили. Её судьба тесно связана с Маленией.</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-name">Локация</span>
+                                <span class="stat-value">Церковь</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Квест</span>
+                                <span class="stat-value">Побочный</span>
+                            </div>
+                        </div>
+                        <a href="character-millicent.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">&raquo;</a>
+            </div>
+            <div class="characters-stats">
+                <h2>Статистика персонажей</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Всего персонажей</h3>
+                        <div class="stat-value">48</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Основные NPC</h3>
+                        <div class="stat-value">12</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Боссы</h3>
+                        <div class="stat-value">83</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Квестовые линии</h3>
+                        <div class="stat-value">24</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elden Ring Encyclopedia</h3>
+                    <p>Неофициальный справочник по миру Elden Ring. Все права на игру принадлежат FromSoftware и Bandai Namco.</p>
+                    <div class="footer-logo">
+                        <img src="images/elden-ring-logo-small.png" alt="Elden Ring">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="characters.html">Персонажи</a></li>
+                        <li><a href="bosses.html">Боссы</a></li>
+                        <li><a href="weapons.html">Оружие</a></li>
+                        <li><a href="magic.html">Магия</a></li>
+                        <li><a href="locations.html">Локации</a></li>
+                        <li><a href="lore.html">Лор</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Сообщество</h3>
+                    <ul>
+                        <li><a href="forum.html">Форум</a></li>
+                        <li><a href="guides.html">Гайды</a></li>
+                        <li><a href="contribute.html">Участвовать</a></li>
+                        <li><a href="discord.html">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Подписаться</h3>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit">OK</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><img src="images/social/vk.png" alt="VK"></a>
+                        <a href="#"><img src="images/social/tg.png" alt="Telegram"></a>
+                        <a href="#"><img src="images/social/yt.png" alt="YouTube"></a>
+                        <a href="#"><img src="images/social/twitter.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 Elden Ring Encyclopedia. Все права защищены.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="contact.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/characters.js"></script>
+</body>
+</html>

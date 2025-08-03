@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Encyclopedia - Предметы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/items.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Game Encyclopedia</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="characters.html">Персонажи</a></li>
+                    <li><a href="items.html" class="active">Предметы</a></li>
+                    <li><a href="locations.html">Локации</a></li>
+                    <li><a href="forum.html">Форум</a></li>
+                </ul>
+            </nav>
+            <div class="search-auth">
+                <form action="search.html" method="GET">
+                    <input type="text" name="q" placeholder="Поиск...">
+                    <button type="submit">Найти</button>
+                </form>
+                <div class="auth-buttons">
+                    <button class="login-btn">Войти</button>
+                    <button class="register-btn">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <h1>Предметы Elden Ring</h1>
+            <p class="page-description">Полный каталог оружия, доспехов, колец, расходников и других предметов с их характеристиками и местоположением.</p>
+            <div class="filters">
+                <form>
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label for="item-type">Тип предмета</label>
+                            <select id="item-type" name="type">
+                                <option value="all">Все</option>
+                                <option value="weapons">Оружие</option>
+                                <option value="armor">Доспехи</option>
+                                <option value="talismans">Талисманы</option>
+                                <option value="consumables">Расходники</option>
+                                <option value="materials">Материалы</option>
+                                <option value="keys">Ключевые предметы</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="item-category">Категория</label>
+                            <select id="item-category" name="category">
+                                <option value="all">Все</option>
+                                <option value="melee">Ближний бой</option>
+                                <option value="ranged">Дальний бой</option>
+                                <option value="magic">Магия</option>
+                                <option value="helmets">Шлемы</option>
+                                <option value="chest">Нагрудники</option>
+                                <option value="gloves">Перчатки</option>
+                                <option value="legs">Поножи</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="item-rarity">Редкость</label>
+                            <select id="item-rarity" name="rarity">
+                                <option value="all">Все</option>
+                                <option value="common">Обычные</option>
+                                <option value="rare">Редкие</option>
+                                <option value="unique">Уникальные</option>
+                                <option value="legendary">Легендарные</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-row">
+                        <div class="filter-group search-group">
+                            <label for="item-search">Поиск</label>
+                            <input type="text" id="item-search" name="search" placeholder="Название предмета...">
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="item-sort">Сортировка</label>
+                            <select id="item-sort" name="sort">
+                                <option value="name-asc">По имени (А-Я)</option>
+                                <option value="name-desc">По имени (Я-А)</option>
+                                <option value="damage">По урону</option>
+                                <option value="weight">По весу</option>
+                                <option value="required">По требованиям</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn">Применить</button>
+                        <button type="reset" class="btn btn-outline">Сбросить</button>
+                    </div>
+                </form>
+            </div>
+            <div class="items-grid">
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/items/moonveil.jpg" alt="Лунный клинок">
+                        <span class="item-rarity legendary">Легендарный</span>
+                    </div>
+                    <div class="item-info">
+                        <h2>Лунный клинок</h2>
+                        <div class="item-meta">
+                            <span class="item-type">Катана</span>
+                            <span class="item-weight">5.5</span>
+                        </div>
+                        <div class="item-stats">
+                            <div class="stat">
+                                <span class="stat-name">Физ. урон</span>
+                                <span class="stat-value">73</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Маг. урон</span>
+                                <span class="stat-value">87</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Крит</span>
+                                <span class="stat-value">100</span>
+                            </div>
+                        </div>
+                        <div class="item-requirements">
+                            <span>Требуется: Сил 12, Лов 18, Инт 23</span>
+                        </div>
+                        <a href="item-moonveil.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/items/bloodhound-fang.jpg" alt="Клык ищейки">
+                        <span class="item-rarity unique">Уникальный</span>
+                    </div>
+                    <div class="item-info">
+                        <h2>Клык ищейки</h2>
+                        <div class="item-meta">
+                            <span class="item-type">Изогнутый меч</span>
+                            <span class="item-weight">11.5</span>
+                        </div>
+                        <div class="item-stats">
+                            <div class="stat">
+                                <span class="stat-name">Физ. урон</span>
+                                <span class="stat-value">141</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Кровоиз.</span>
+                                <span class="stat-value">55</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Крит</span>
+                                <span class="stat-value">100</span>
+                            </div>
+                        </div>
+                        <div class="item-requirements">
+                            <span>Требуется: Сил 18, Лов 17</span>
+                        </div>
+                        <a href="item-bloodhound-fang.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/items/radahn-armor.jpg" alt="Доспех Радана">
+                        <span class="item-rarity legendary">Легендарный</span>
+                    </div>
+                    <div class="item-info">
+                        <h2>Доспех Радана</h2>
+                        <div class="item-meta">
+                            <span class="item-type">Нагрудник</span>
+                            <span class="item-weight">26.5</span>
+                        </div>
+                        <div class="item-stats">
+                            <div class="stat">
+                                <span class="stat-name">Физ. защита</span>
+                                <span class="stat-value">38.4</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Уд. защита</span>
+                                <span class="stat-value">35.1</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Вес</span>
+                                <span class="stat-value">26.5</span>
+                            </div>
+                        </div>
+                        <div class="item-requirements">
+                            <span>Требуется: Сил 42</span>
+                        </div>
+                        <a href="item-radahn-armor.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/items/carian-regal-scepter.jpg" alt="Скипетр Кариан">
+                        <span class="item-rarity unique">Уникальный</span>
+                    </div>
+                    <div class="item-info">
+                        <h2>Скипетр Кариан</h2>
+                        <div class="item-meta">
+                            <span class="item-type">Посох</span>
+                            <span class="item-weight">3.5</span>
+                        </div>
+                        <div class="item-stats">
+                            <div class="stat">
+                                <span class="stat-name">Маг. шкала</span>
+                                <span class="stat-value">273</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Треб. Инт</span>
+                                <span class="stat-value">60</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Вес</span>
+                                <span class="stat-value">3.5</span>
+                            </div>
+                        </div>
+                        <div class="item-requirements">
+                            <span>Требуется: Инт 60</span>
+                        </div>
+                        <a href="item-carian-regal-scepter.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/items/erdtree-favor.jpg" alt="Благоволение Древа Эрд">
+                        <span class="item-rarity legendary">Легендарный</span>
+                    </div>
+                    <div class="item-info">
+                        <h2>Благоволение Древа Эрд</h2>
+                        <div class="item-meta">
+                            <span class="item-type">Талисман</span>
+                            <span class="item-weight">1.5</span>
+                        </div>
+                        <div class="item-stats">
+                            <div class="stat">
+                                <span class="stat-name">Макс. HP</span>
+                                <span class="stat-value">+3%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Макс. выносл.</span>
+                                <span class="stat-value">+6.75%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Макс. вес</span>
+                                <span class="stat-value">+5%</span>
+                            </div>
+                        </div>
+                        <div class="item-requirements">
+                            <span>Требуется: -</span>
+                        </div>
+                        <a href="item-erdtree-favor.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/items/lusats-glintstone-crown.jpg" alt="Корона Лусата">
+                        <span class="item-rarity rare">Редкий</span>
+                    </div>
+                    <div class="item-info">
+                        <h2>Корона Лусата</h2>
+                        <div class="item-meta">
+                            <span class="item-type">Шлем</span>
+                            <span class="item-weight">4.3</span>
+                        </div>
+                        <div class="item-stats">
+                            <div class="stat">
+                                <span class="stat-name">Маг. защита</span>
+                                <span class="stat-value">7.2</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Маг. урон</span>
+                                <span class="stat-value">+15%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">Расход FP</span>
+                                <span class="stat-value">+15%</span>
+                            </div>
+                        </div>
+                        <div class="item-requirements">
+                            <span>Требуется: -</span>
+                        </div>
+                        <a href="item-lusats-crown.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">&raquo;</a>
+            </div>
+            <div class="items-stats">
+                <h2>Статистика предметов</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Всего предметов</h3>
+                        <div class="stat-value">1,248</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Оружие</h3>
+                        <div class="stat-value">308</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Доспехи</h3>
+                        <div class="stat-value">560</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Талисманы</h3>
+                        <div class="stat-value">100</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elden Ring Encyclopedia</h3>
+                    <p>Неофициальный справочник по миру Elden Ring. Все права на игру принадлежат FromSoftware и Bandai Namco.</p>
+                    <div class="footer-logo">
+                        <img src="images/elden-ring-logo-small.png" alt="Elden Ring">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="characters.html">Персонажи</a></li>
+                        <li><a href="bosses.html">Боссы</a></li>
+                        <li><a href="weapons.html">Оружие</a></li>
+                        <li><a href="magic.html">Магия</a></li>
+                        <li><a href="locations.html">Локации</a></li>
+                        <li><a href="lore.html">Лор</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Сообщество</h3>
+                    <ul>
+                        <li><a href="forum.html">Форум</a></li>
+                        <li><a href="guides.html">Гайды</a></li>
+                        <li><a href="contribute.html">Участвовать</a></li>
+                        <li><a href="discord.html">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Подписаться</h3>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit">OK</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><img src="images/social/vk.png" alt="VK"></a>
+                        <a href="#"><img src="images/social/tg.png" alt="Telegram"></a>
+                        <a href="#"><img src="images/social/yt.png" alt="YouTube"></a>
+                        <a href="#"><img src="images/social/twitter.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 Elden Ring Encyclopedia. Все права защищены.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="contact.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/items.js"></script>
+</body>
+</html>
